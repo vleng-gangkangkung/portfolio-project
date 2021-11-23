@@ -1,0 +1,54 @@
+:root {
+  --clr-dark: #24285d;
+  --clr-neutral: #cbcbcb;
+  --clr-accent: #f52441;
+  --clr-secondary: #b0a2cb;
+
+  --ff-accent: "Playfair Display", serif; /* reg:400, Bold:700, ex-bold:800 */
+  --ff-primary: "Poppins", sans-serif; /* light:300, Ex-bold:800 */
+  --ff-content: "futura", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+body,
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+.header-container {
+  background-color: var(--clr-dark);
+  text-align: center;
+  width: 100%;
+  padding-block: 20px;
+}
+
+h1 {
+  font-family: var(--ff-accent);
+  color: white;
+  font-size: 8rem;
+}
+
+h2 {
+  font-family: var(--ff-content);
+  color: white;
+  font-size: 1.8rem;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+h3 {
+  font-family: var(--ff-accent);
+  font-weight: 400;
+  color: white;
+  font-size: 2.5rem;
+}
+
+p {
+  color: var(--clr-dark);
+  font-size: 1.5rem;
+}
