@@ -75,6 +75,13 @@ h3 {
   letter-spacing: 0.5px;
 }
 
+.headings {
+  font-family: var(--ff-accent);
+  font-weight: 400;
+  color: white;
+  font-size: 3.5rem;
+  letter-spacing: 0.5px;
+}
 .dark {
   color: var(--clr-dark);
 }
@@ -92,7 +99,7 @@ h3 {
   box-shadow: 7px 7px var(--clr-neutral);
   margin-bottom: 2em;
 }
-.cta-light {
+.cta-dark {
   text-decoration: none;
   background-color: var(--clr-accent);
   color: white;
@@ -103,8 +110,6 @@ h3 {
   letter-spacing: 2px;
   text-transform: uppercase;
   box-shadow: 7px 7px var(--clr-dark);
-  position: absolute;
-  top: 35%;
 }
 
 .cta:hover {
@@ -142,7 +147,7 @@ h3 {
 
 .content {
   margin-top: 1em;
-  margin-bottom: 4em;
+  margin-bottom: 3em;
 }
 p {
   color: var(--clr-dark);
@@ -153,6 +158,9 @@ p {
 img {
   max-width: 100%;
   box-sizing: border-box;
+  border-radius: 2px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
 
 .light {
@@ -172,14 +180,12 @@ img {
 
 .neutral {
   background-color: var(--clr-neutral);
-  width: 100%;
   padding-block: 80px;
-  display: flex;
-  position: relative;
+  margin: auto;
 }
 
 .center-vertical {
-  margin: auto;
+  margin: 0 auto;
 }
 
 .enquire {
@@ -189,12 +195,71 @@ img {
   font-size: 5rem;
   max-width: 370px;
   border-right: 1px solid var(--clr-accent);
+  padding-right: 30px;
 }
-
+/* 
 .emphasis-text {
   font-family: var(--ff-content);
   font-weight: 800;
   font-size: 1.4em;
   margin-left: 20px;
   margin-block: auto;
+} */
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.flex-2 {
+  max-width: 300px;
+  margin-right: 300px;
+  font-family: var(--ff-content);
+  font-weight: 800;
+  font-size: 1.4em;
+  margin-left: 20px;
+  margin-block: auto;
+}
+.flex-3 {
+  margin-top: 20px;
+}
+
+@media (max-width: 700px) {
+  .content-container {
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 5rem;
+    font-weight: 700;
+    padding-bottom: 1rem;
+  }
+  h3 {
+    font-weight: 400;
+    color: white;
+    font-size: 1.8rem;
+    letter-spacing: 0.5px;
+  }
+
+  .enquire {
+    font-family: var(--ff-accent);
+    font-weight: 700;
+    text-align: center;
+    color: var(--clr-dark);
+    font-size: 5rem;
+    border-right: 0;
+    padding-right: 0px;
+  }
+  .flex-2 {
+    max-width: 100%;
+    margin-right: 0px;
+    font-family: var(--ff-content);
+    font-weight: 800;
+    font-size: 1.4em;
+    margin-left: 20px;
+    margin-block: auto;
+    margin-left: 0px;
+    margin-bottom: 3em;
+    text-align: center;
+  }
 }
