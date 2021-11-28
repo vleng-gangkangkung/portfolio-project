@@ -52,7 +52,31 @@ header {
   text-transform: uppercase;
   box-shadow: 7px 7px var(--clr-neutral);
 }
-
+.header-inner {
+  margin-bottom: 5em;
+  background-color: var(--clr-dark);
+  text-align: center;
+  width: 100%;
+  padding-block: 50px;
+  margin-bottom: 100px;
+  position: relative;
+}
+.page-headings {
+  position: absolute;
+  top: 70%;
+  left: 33%;
+  right: 33%;
+  text-align: center;
+  background-color: var(--clr-accent);
+  color: white;
+  font-size: 1.8rem;
+  padding: 10px 3px;
+  font-family: var(--ff-content);
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  box-shadow: 7px 7px var(--clr-neutral);
+}
 h1 {
   font-family: var(--ff-accent);
   color: white;
@@ -169,6 +193,17 @@ img {
     rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
 
+.box {
+  box-shadow: 15px 15px var(--clr-dark), -15px -15px var(--clr-accent);
+  margin-bottom: 2em;
+  width: 550px;
+  height: 550px;
+  background-color: var(--clr-neutral);
+}
+
+.box-shadow {
+  box-shadow: -15px -15px var(--clr-dark);
+}
 .light {
   background-color: var(--clr-secondary);
   text-align: center;
