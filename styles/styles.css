@@ -193,11 +193,11 @@ img {
     rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
 
-.box {
+.about {
   box-shadow: 15px 15px var(--clr-dark), -15px -15px var(--clr-accent);
   margin-bottom: 2em;
-  width: 550px;
-  height: 550px;
+  width: 500px;
+
   background-color: var(--clr-neutral);
 }
 
@@ -206,7 +206,7 @@ img {
 }
 .light {
   background-color: var(--clr-secondary);
-  text-align: center;
+
   width: 100%;
   padding-block: 50px;
   margin: 0 auto;
