@@ -7,6 +7,7 @@
   --ff-accent: "Playfair Display", serif; /* reg:400, Bold:700, ex-bold:800 */
   --ff-primary: "Poppins", sans-serif; /* light:300, Ex-bold:800 */
   --ff-content: "futura", sans-serif;
+  --ff-bodycopy: "Roboto", sans-serif;
 }
 
 html {
@@ -27,7 +28,6 @@ a {
 }
 
 header {
-  margin-bottom: 5em;
   background-color: var(--clr-dark);
   text-align: center;
   width: 100%;
@@ -111,6 +111,27 @@ h5 {
   text-align: center;
   padding-top: 1.5rem;
 }
+
+.navigation {
+  background-color: var(--clr-neutral);
+  min-height: 50px;
+  padding: 0;
+}
+
+ul {
+  display: flex;
+  justify-content: flex-end;
+}
+li {
+  list-style: none;
+  font-family: var(--ff-bodycopy);
+  color: var(--clr-dark);
+  font-size: 1.8rem;
+  font-weight: 600;
+  display: inline;
+  padding-inline: 30px;
+}
+
 .headings {
   font-family: var(--ff-accent);
   font-weight: 400;
@@ -189,7 +210,7 @@ h5 {
 p {
   color: var(--clr-dark);
   font-size: 1.5rem;
-  font-family: var(--ff-primary);
+  font-family: var(--ff-bodycopy);
 }
 
 img {
