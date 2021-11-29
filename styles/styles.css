@@ -103,7 +103,14 @@ h3 {
   font-size: 2rem;
   letter-spacing: 0.5px;
 }
-
+h5 {
+  font-family: var(--ff-content);
+  color: var(--clr-dark);
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-align: center;
+  padding-top: 1.5rem;
+}
 .headings {
   font-family: var(--ff-accent);
   font-weight: 400;
@@ -196,7 +203,7 @@ img {
 .about {
   box-shadow: 15px 15px var(--clr-dark), -15px -15px var(--clr-accent);
   margin-bottom: 2em;
-  width: 500px;
+  min-width: 500px;
 
   background-color: var(--clr-neutral);
 }
@@ -265,6 +272,22 @@ img {
   max-width: 270px;
 }
 
+.card {
+  margin-top: 15px;
+}
+
+.card-img-top {
+  box-shadow: none;
+  padding: 10px;
+}
+
+.card-body p {
+  text-align: center;
+  opacity: 0.8;
+  margin-inline: 40px;
+  min-height: 50px;
+}
+
 @media (max-width: 770px) {
   .content-container {
     text-align: center;
@@ -280,6 +303,7 @@ img {
     color: white;
     font-size: 1.8rem;
     letter-spacing: 0.5px;
+    text-align: center;
   }
 
   .flex-2 {
