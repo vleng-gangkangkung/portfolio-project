@@ -112,26 +112,40 @@ h5 {
   padding-top: 1.5rem;
 }
 
-.navigation {
+.nav-bg {
   background-color: var(--clr-neutral);
-  min-height: 50px;
-  padding: 0;
+  height: 60px;
+}
+
+.logo {
+  box-shadow: none;
+  padding-top: 8px;
+  height: 100%;
 }
 
 ul {
   display: flex;
-  justify-content: flex-end;
 }
-li {
+
+nav li {
   list-style: none;
   font-family: var(--ff-bodycopy);
   color: var(--clr-dark);
-  font-size: 1.8rem;
-  font-weight: 600;
-  display: inline;
-  padding-inline: 30px;
+  font-size: 1.5rem;
+  font-weight: 400;
+  padding-block: 20px;
+  padding-left: 20px;
 }
 
+nav li a:hover {
+  color: var(--clr-secondary);
+  text-decoration: none;
+  transition: all 100ms ease-in-out;
+}
+
+.active {
+  color: var(--clr-accent);
+}
 .headings {
   font-family: var(--ff-accent);
   font-weight: 400;
@@ -174,6 +188,7 @@ li {
   color: white;
   background-color: var(--clr-dark);
   box-shadow: 7px 7px var(--clr-accent);
+  transition: all 300ms ease-in-out;
 }
 
 .footer {
@@ -224,8 +239,6 @@ img {
 .about {
   box-shadow: 15px 15px var(--clr-dark), -15px -15px var(--clr-accent);
   margin-bottom: 2em;
-  min-width: 500px;
-
   background-color: var(--clr-neutral);
 }
 
@@ -262,8 +275,7 @@ img {
   font-weight: 700;
   color: var(--clr-dark);
   font-size: 5rem;
-  /* max-width: 370px;
-  border-right: 1px solid var(--clr-accent); */
+
   padding-right: 30px;
 }
 .border-red {
@@ -310,7 +322,9 @@ img {
 }
 
 @media (max-width: 770px) {
-  .content-container {
+  .content-container,
+  p,
+  .about-cta {
     text-align: center;
   }
 
