@@ -117,7 +117,7 @@ h5 {
 }
 
 .nav-bg {
-  background-color: var(--clr-neutral);
+  background-color: #282c65;
   height: 60px;
 }
 
@@ -125,6 +125,8 @@ h5 {
   box-shadow: none;
   padding-top: 8px;
   height: 100%;
+  filter: invert(94%) sepia(94%) saturate(22%) hue-rotate(2deg) brightness(107%)
+    contrast(105%);
 }
 
 ul {
@@ -134,7 +136,7 @@ ul {
 nav li {
   list-style: none;
   font-family: var(--ff-bodycopy);
-  color: var(--clr-dark);
+  color: white;
   font-size: 1.5rem;
   font-weight: 400;
   padding-block: 20px;
@@ -142,9 +144,8 @@ nav li {
 }
 
 nav li a:hover {
-  color: var(--clr-secondary);
-  text-decoration: none;
-  transition: all 100ms ease-in-out;
+  color: white;
+  font-weight: 600;
 }
 
 .active {
@@ -226,6 +227,7 @@ nav li a:hover {
   margin-top: 1em;
   margin-bottom: 3em;
 }
+
 p {
   color: var(--clr-dark);
   font-size: 1.5rem;
@@ -244,11 +246,13 @@ img {
   box-shadow: 15px 15px var(--clr-dark), -15px -15px var(--clr-accent);
   margin-bottom: 2em;
   background-color: var(--clr-neutral);
+  border-radius: 0;
 }
 
 .box-shadow {
   box-shadow: -15px -15px var(--clr-dark);
 }
+
 .light {
   background-color: var(--clr-secondary);
   width: 100%;
@@ -265,8 +269,8 @@ img {
 
 .neutral {
   background-color: var(--clr-neutral);
-  padding-block: 80px;
-  margin: auto;
+  padding-block: 70px;
+  margin: 0 auto;
 }
 
 .center-vertical {
@@ -278,7 +282,7 @@ img {
   font-weight: 700;
   color: var(--clr-dark);
   font-size: 5rem;
-
+  padding-left: 50px;
   padding-right: 30px;
 }
 .border-red {
@@ -293,12 +297,14 @@ img {
 .flex-container {
   display: flex;
   flex-wrap: wrap;
+  flex-basis: 100%;
   justify-content: center;
   gap: 1em;
+  margin: auto;
 }
 
 .flex-2 {
-  max-width: 400px;
+  max-width: 350px;
   flex: 1 0 100%;
   margin-left: 20px;
   margin-block: auto;
@@ -310,6 +316,12 @@ img {
 
 .card {
   margin-top: 15px;
+}
+
+.card:hover {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  transition: all 300ms ease-in-out;
 }
 
 .card-img-top {
@@ -334,7 +346,8 @@ img {
 @media (max-width: 770px) {
   .content-container,
   p,
-  .about-cta {
+  .about-cta,
+  .center-btn {
     text-align: center;
   }
 
@@ -350,7 +363,13 @@ img {
     letter-spacing: 0.5px;
     text-align: center;
   }
+}
 
+@media (max-width: 880px) {
+  .flex-container {
+    max-width: 500px;
+    align-content: center;
+  }
   .flex-2 {
     text-align: center;
     padding-left: 50px;
@@ -362,7 +381,8 @@ img {
     text-align: center;
     color: var(--clr-dark);
     font-size: 5rem;
-    border-right: 0;
-    padding-right: 0px;
+  }
+  .border-red {
+    display: none;
   }
 }
