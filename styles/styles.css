@@ -27,6 +27,13 @@ a {
   color: inherit;
 }
 
+footer {
+  background-color: var(--clr-dark);
+  max-height: 300px;
+  margin: auto;
+  padding-top: 20px;
+}
+
 button {
   border-style: none;
 }
@@ -196,12 +203,6 @@ nav li a:hover {
   transition: all 300ms ease-in-out;
 }
 
-.footer {
-  background-color: var(--clr-dark);
-  max-height: 300px;
-  margin: auto;
-  padding-top: 20px;
-}
 .social-icons a {
   text-align: center;
   float: right;
