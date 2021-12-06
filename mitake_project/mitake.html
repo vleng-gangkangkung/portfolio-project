@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Japan Travel : Mitake Tozan</title>
+  </head>
+
+  <style>
+    body {
+      background: linear-gradient(to right, #c1dfc4 0%, #deecdd 100%);
+    }
+
+    h1,
+    h2,
+    button,
+    body {
+      text-align: center;
+      font-family: "Gill Sans", sans-serif;
+      color: #3a3a59;
+    }
+
+    h1 {
+      line-height: 30px;
+      font-weight: 600;
+      padding: 10px 0 0px 0;
+      letter-spacing: 5px;
+    }
+
+    h2 {
+      line-height: 10px;
+      padding: 0 0 10px 0;
+      letter-spacing: 5px;
+      font-weight: 400;
+      font-size: 18px;
+    }
+
+    p {
+      text-align: center;
+      font-family: "Gill Sans", sans-serif;
+      font-weight: 350;
+      font-size: 18px;
+    }
+    a {
+      display: block;
+      text-align: center;
+    }
+
+    a:hover {
+      color: #900d0d;
+      transition: all 200ms ease-in-out;
+    }
+    button {
+      display: block;
+      text-align: center;
+      margin: 30px auto 30px;
+      padding: 10px 40px;
+      font-size: 12px;
+      background-color: #900d0d;
+      border: 1px solid #900d0d;
+      color: white;
+      transition: all 200ms ease-in-out;
+      letter-spacing: 3px;
+    }
+
+    button:hover {
+      cursor: pointer;
+      color: #900d0d;
+      border: 1px solid #900d0d;
+      background-color: whitesmoke;
+    }
+    img {
+      display: block;
+      margin: 0 auto;
+      padding: 20px 0 0 0;
+      max-width: 600px;
+      box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+    }
+
+    hr {
+      display: block;
+      height: 1px;
+      margin: 0 auto;
+
+      max-width: 600px;
+      background-color: #900d0d;
+      border: none;
+    }
+    .bodycopy {
+      margin: 0 auto;
+      padding-top: 20px;
+      max-width: 600px;
+      font-weight: 300;
+    }
+
+    .container {
+      background-color: whitesmoke;
+      margin: 50px auto 30px;
+      padding: 10px;
+      max-width: 700px;
+      border: 0px solid #900d0d;
+      border-radius: 4px;
+
+      box-shadow: rgba(31, 111, 120, 0.25) 0px 13px 27px -5px,
+        rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+
+      transition: all 1s ease-in-out;
+    }
+
+    .container:hover {
+      background-color: whitesmoke;
+      box-shadow: rgba(31, 111, 120, 0.1) 0px 1px 1px 0px inset,
+        rgba(31, 111, 120, 0.25) 0px 50px 100px -20px,
+        rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    }
+
+    .footer {
+      margin-top: 0%;
+      padding-top: 0;
+      font-size: small;
+      color: rgba(58, 58, 89, 0.7);
+    }
+    .linkedin {
+      display: inline;
+      color: #3a3a59;
+      text-decoration: none;
+      color: rgba(58, 58, 89, 0.7);
+    }
+  </style>
+
+  <body>
+    
+    </div>
+    <div class="container">
+      <h1>MITAKE TOZAN RAILWAY</h1>
+      <h2>OFF THE BEATEN TRACK</h2>
+      <hr />
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/017/108/original/mitake.png?1631542347"
+      />
+
+      <div class="bodycopy">
+        <p>
+          The Mitake Tozan Railway (御岳登山鉄道, Mitake Tozan Tetsudō, "Mitake
+          Mountain Railway") is a Japanese transport company in Ōme, Tokyo. It
+          belongs to the Keio Group. The company operates a funicular line and a
+          chairlift, both in Mount Mitake. The company was founded in 1927.
+        </p>
+        <p>
+          The funicular line is commonly known as Mitake Tozan Cable
+          (御岳登山ケーブル, Mitake Tozan Kēburu). The difference in elevation
+          between the two stations is 424 m (1,390ft). Construction began in
+          1930, and operation started in 1935. In 1944, it was suspended due to
+          World War II and partially scrapped for material, with operation only
+          starting again in 1951. In 1991, the gauge was changed from the
+          original 1,067mm to 1,049mm because the rail profile was increased.
+          Pasmo and Suica IC cards are accepted as payment methods.
+        </p>
+        <a
+          href="https://mitaketozan.co.jp/eng2014/"
+          target="_blank"
+          alt="Mitake Tozan JP Official English Site"
+          >Find out more about it on the official site</a
+        >
+
+        <button>ENQUIRE NOW</button>
+      </div>
+    </div>
+
+    <p class="footer">
+      Coded by
+      <a
+        href="https://www.linkedin.com/in/vanessa-leng/"
+        class="linkedin"
+        target="_blank"
+        alt="linkedin page"
+        >Vanessa Leng</a
+      >
+    </p>
+
+  
+
+    <script>
+      function bookTicket() {
+        let name = prompt("What is your name?");
+        let quantity = prompt("How many tickets would you like?");
+
+        let month = prompt("What month would like to visit?").toLowerCase();
+        let email = prompt("What is your email adress?");
+        let sorry =
+          "Sorry " +
+          name +
+          ", the Mitake Tozan Railway is closed during the months of December to January, please choose another month.";
+        let message =
+          "Thank you " +
+          name +
+          ", for enquiring about " +
+          quantity +
+          " ticket(s) during the month of " +
+          month +
+          ". We will be intouch!";
+
+        if (month === "january" || month === "december") {
+          alert(sorry);
+        } else {
+          alert(message);
+        }
+      }
+      let bookNow = document.querySelector("button");
+      bookNow.addEventListener("click", bookTicket);
+    </script>
+  </body>
+</html>

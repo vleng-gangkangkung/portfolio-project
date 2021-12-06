@@ -34,6 +34,11 @@ footer {
   padding-top: 20px;
 }
 
+footer .small-print {
+  margin-bottom: 100px;
+  float: left;
+}
+
 button {
   border-style: none;
 }
@@ -69,7 +74,7 @@ header {
   text-align: center;
   width: 100%;
   padding-block: 50px;
-  margin-bottom: 100px;
+  margin-bottom: 70px;
   position: relative;
 }
 .page-headings {
@@ -88,6 +93,7 @@ header {
   text-transform: uppercase;
   box-shadow: 7px 7px var(--clr-neutral);
 }
+
 h1 {
   font-family: var(--ff-accent);
   color: white;
@@ -131,7 +137,7 @@ h5 {
 .logo {
   box-shadow: none;
   padding-top: 8px;
-  height: 100%;
+
   filter: invert(94%) sepia(94%) saturate(22%) hue-rotate(2deg) brightness(107%)
     contrast(105%);
 }
@@ -203,21 +209,18 @@ nav li a:hover {
   transition: all 300ms ease-in-out;
 }
 
-.social-icons a {
-  text-align: center;
-  float: right;
+.social-icons i {
   width: 36px;
   height: 36px;
-  background-color: white;
-  border-radius: 100%;
-  margin-bottom: 50px;
-  margin-right: 7px;
-  display: inline;
-}
-.social-icons a i {
   font-size: 20px;
+  float: right;
   line-height: 38px;
   color: var(--clr-accent);
+  background-color: white;
+  border-radius: 50%;
+  text-align: center;
+  margin-right: 7px;
+  margin-bottom: 50px;
 }
 
 .content-container {
@@ -364,6 +367,20 @@ img {
     letter-spacing: 0.5px;
     text-align: center;
   }
+
+  .quotes {
+    text-align: center;
+  }
+
+  .social-icons {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+  }
+
+  .small-print {
+    text-align: center;
+  }
 }
 
 @media (max-width: 880px) {
@@ -379,6 +396,7 @@ img {
   .enquire {
     font-family: var(--ff-accent);
     font-weight: 700;
+    line-height: 60px;
     text-align: center;
     color: var(--clr-dark);
     font-size: 5rem;
